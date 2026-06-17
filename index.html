@@ -373,19 +373,24 @@
         min-height:100%;
         overflow-x:hidden;
     }
-    body {
-        /* <--- AQUÍ ESTÁ EL CAMBIO PARA CELULARES */
-        background-image: url('fotofondo.jpg') !important; 
-       background-size:100% auto;
-        background-position: center top !important;
-       background-repeat:repeat-y;
-        background-attachment: scroll !important;
-        
-        margin: 0 !important;
-        padding: 15px 0 !important;
-        background-color: #fafafa !important;
-    }
+   body {
+    background-image: url('fotofondo.jpg') !important;
 
+    background-size: cover !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+
+    margin: 0 !important;
+    padding: 15px 0 !important;
+    background-color: transparent !important;
+}
+section,
+.container,
+.contenedor-tarjetas,
+.contenedor-cards {
+    background: transparent !important;
+}
 
 
     .container{
