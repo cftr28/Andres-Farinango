@@ -476,6 +476,98 @@
     }
     /* ... resto de tu código ... */
 }
+/* ==============================
+   AJUSTE IPHONE 6S / MÓVILES
+   ============================== */
+@media (max-width: 768px) {
+
+    body {
+        background-image: url('fotofondo.png') !important;
+        background-attachment: scroll !important;
+
+        /* evita deformación en Safari */
+        background-size: auto 100% !important;
+        background-position: top center !important;
+        background-repeat: repeat-y !important;
+
+        padding: 15px 0 !important;
+        margin: 0 !important;
+    }
+
+
+    .container {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+
+    /* TARJETAS GRANDES EN IPHONE */
+    .contenedor-cards,
+    .contenedor-tarjetas,
+    .tarjeta-evento,
+    .card,
+    .card-pases,
+    .card-final {
+
+        width: calc(100% - 30px) !important;
+        max-width: none !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .contenedor-tarjetas {
+        flex-direction: column !important;
+        padding: 15px 0 !important;
+        gap: 20px !important;
+    }
+
+
+    .tarjeta-evento {
+        padding: 35px 20px !important;
+        min-height: auto !important;
+    }
+
+
+    .card {
+        padding: 30px 20px !important;
+    }
+
+
+    /* fotos */
+    .foto-boda {
+        max-width: 90% !important;
+    }
+
+
+    .contenedor-dos-fotos {
+        flex-direction: column !important;
+        padding: 0 !important;
+    }
+
+
+    .foto-boda-doble {
+        max-width: calc(100% - 30px) !important;
+    }
+
+
+    /* textos */
+    .nombres {
+        font-size: 3rem !important;
+    }
+
+    .titulo-tarjeta {
+        font-size: 2.2rem !important;
+    }
+
+    .texto-info {
+        font-size: 1rem !important;
+    }
+
+}
     </style>
 </head>
 <body>
