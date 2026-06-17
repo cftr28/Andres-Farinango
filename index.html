@@ -358,7 +358,13 @@
     color: #b8860b; /* Tono champagne/dorado */
 }
 
+/* ==============================
+   CELULARES
+   ============================== */
 
+/* ==============================
+   CELULARES
+   ============================== */
 
 @media (max-width:768px){
 
@@ -368,52 +374,46 @@
         overflow-x:hidden;
     }
 
+
     body{
-        margin:0!important;
-        padding:15px 0!important;
 
-        background-image:url('fotofondo.jpg')!important;
+        background-image:url('fotofondo.png') !important;
+        background-size:cover !important;
+        background-position:center top !important;
+        background-repeat:no-repeat !important;
+        background-attachment:scroll !important;
 
-        /* ocupa toda la página */
-        background-size:cover!important;
+        margin:0 !important;
+        padding:15px 0 !important;
+        background-color:#fafafa !important;
 
-        /* queda centrado desde arriba */
-        background-position:center top!important;
-
-        /* no se repite */
-        background-repeat:no-repeat!important;
-
-        /* se mueve con el contenido */
-        background-attachment:scroll!important;
+        image-rendering:auto!important;
     }
-
-
-    body::before{
-        display:none!important;
+.fondo-boda {
+        /* Cambiamos a la imagen de celular */
+        background-image: url('fotofondo.png') !important;
+        /* IMPORTANTE: Quitamos el 'fixed' en móviles para evitar la distorsión */
+        background-attachment: scroll !important;
     }
-
-
-    section,
-    .container,
-    .contenedor-tarjetas,
-    .contenedor-cards{
-        background:transparent!important;
-    }
-
 
     .container{
+
         width:100%!important;
         max-width:100%!important;
         padding:0!important;
+
     }
 
 
+    /* tarjetas generales */
     .contenedor-cards,
     .contenedor-tarjetas{
+
         flex-direction:column!important;
         align-items:center!important;
         gap:20px!important;
         padding:15px 0!important;
+
     }
 
 
@@ -421,51 +421,143 @@
     .tarjeta-evento,
     .card-final,
     .card-pases{
+
         width:88%!important;
         max-width:500px!important;
-        margin:auto!important;
+        margin-left:auto!important;
+        margin-right:auto!important;
         box-sizing:border-box!important;
+
+    }
+
+
+    /* portada */
+
+    .boton-play{
+
+        margin-top:20px!important;
+        margin-bottom:25px!important;
+
+    }
+
+
+    .circulo-play{
+
+        width:45px!important;
+        height:45px!important;
+
+    }
+
+
+    .texto-play{
+
+        font-size:1.3rem!important;
+
     }
 
 
     .nombres{
+
         font-size:2.8rem!important;
+        line-height:1.1!important;
+        margin-bottom:15px!important;
+
+    }
+
+
+    .fecha{
+
+        font-size:1.1rem!important;
+        margin-bottom:20px!important;
+
     }
 
 
     .foto-boda{
+
         width:75%!important;
         max-width:260px!important;
         height:auto!important;
+        border:6px solid white!important;
+        box-shadow:0 5px 15px rgba(0,0,0,.15)!important;
+        margin:10px auto 25px auto!important;
+
     }
 
 
+
+    /* fotos dobles */
+
     .contenedor-dos-fotos{
+
         flex-direction:column!important;
+        width:100%!important;
         gap:15px!important;
         padding:0!important;
+
     }
 
 
     .foto-boda-doble{
+
         width:75%!important;
         max-width:240px!important;
+
     }
 
 
+
+    /* textos */
+
+    .frase-boda{
+
+        font-size:1.8rem!important;
+
+    }
+
+
+    .titulo-tarjeta,
+    .titulo-card{
+
+        font-size:2rem!important;
+
+    }
+
+
+
+    /* contador */
+
     .contador-container{
+
         gap:5px!important;
+
     }
 
 
     .bloque{
+
         width:65px!important;
+
     }
 
 
     .numero{
+
         font-size:1.5rem!important;
         padding:12px 4px!important;
+
+    }
+
+
+
+    /* botones */
+
+    .boton-llegar,
+    .boton-confirmar,
+    .boton-pdf{
+
+        max-width:90%!important;
+
     }
 
 }
