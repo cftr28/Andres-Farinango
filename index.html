@@ -363,18 +363,27 @@
    CELULARES
    ============================== */
 @media (max-width:768px){ 
-    html, body { width:100%; min-height:100%; overflow-x:hidden; } 
-    
+
+    html, body { 
+        width:100%; 
+        min-height:100%; 
+        overflow-x:hidden; 
+    } 
+
     body { 
         background: transparent !important; 
         margin:0 !important; 
         padding:70px 0 20px 0 !important; 
         position:relative; 
     } 
-    
+
     body::before { 
         content:""; 
-        position:fixed; top:0; left:0; width:100%; height:100vh; 
+        position:fixed; 
+        top:0; 
+        left:0; 
+        width:100%; 
+        height:100vh; 
         background-image:url('fotofondo.jpg'); 
         background-size:100% auto; 
         background-position:center top; 
@@ -382,178 +391,167 @@
         z-index:-1; 
     } 
 
-    /* ESTA ES LA ÚNICA REGLA PARA .boton-play */
+    /* BOTÓN PLAY */
     .boton-play { 
-        display: flex !important;
-        flex-direction: column !important; 
-        align-items: center !important;
-        justify-content: center !important;
-        width: 100% !important;
-        margin: 20px auto 25px auto !important;
-        gap: 5px !important;
-        background: none !important;
-        border: none !important;
+        display:flex !important;
+        flex-direction:column !important; 
+        align-items:center !important;
+        justify-content:center !important;
+        width:100% !important;
+        margin:20px auto 25px auto !important;
+        gap:5px !important;
+        background:none !important;
+        border:none !important;
     }
 
-    section, .container, .contenedor-tarjetas, .contenedor-cards { background:transparent !important; } 
-    .container { width:100%!important; max-width:100%!important; padding:0!important; } 
-    
-    .contenedor-cards, .contenedor-tarjetas { flex-direction:column!important; align-items:center!important; gap:20px!important; padding:15px 0!important; } 
-    
-    .card, .tarjeta-evento, .card-final, .card-pases { width:88%!important; max-width:500px!important; margin-left:auto!important; margin-right:auto!important; box-sizing:border-box!important; } 
+    .circulo-play { 
+        width:45px !important; 
+        height:45px !important; 
+    } 
 
-    .circulo-play { width:45px!important; height:45px!important; } 
-    .texto-play { font-size:1.3rem!important; display: block !important; } 
-    
-    .fecha { font-size:1.1rem!important; margin-bottom:20px!important; } 
-    
-    .foto-boda { width:75%!important; max-width:260px!important; height:auto!important; border:6px solid white!important; box-shadow:0 5px 15px rgba(0,0,0,.15)!important; margin:10px auto 25px auto!important; } 
-    
-    .contenedor-dos-fotos { flex-direction:column!important; width:100%!important; gap:15px!important; padding:0!important; } 
-    .foto-boda-doble { width:75%!important; max-width:240px!important; } 
-    
-    .frase-boda { font-size:1.8rem!important; } 
-    .titulo-tarjeta, .titulo-card { font-size:2rem!important; } 
-    
-    .contador-container { gap:5px!important; } 
-    .bloque { width:65px!important; } 
-    .numero { font-size:1.5rem!important; padding:12px 4px!important; } 
-    
-    .boton-llegar, .boton-confirmar, .boton-pdf { max-width:90%!important; }
-    /* Ajuste para que los nombres dentro de la tarjeta se vean limpios */
-/* Esto asegura que los nombres dentro de la tarjeta se centren */
-.card p {
-    text-align: center !important;
-    margin: 5px 0 !important; /* Controla el espacio entre nombres */
-    line-height: 1.4 !important;
-}
+    .texto-play { 
+        font-size:1.3rem !important; 
+        display:block !important; 
+    } 
 
-/* Ajuste específico para el contenedor de la tarjeta */
-.card {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-}
+    /* CONTENEDORES GENERALES */
+    section, 
+    .container, 
+    .contenedor-tarjetas, 
+    .contenedor-cards { 
+        background:transparent !important; 
+    } 
 
-/* Para que NOVIA/NOVIO no tengan margen extra */
-.rol {
-    margin-top: 15px !important;
-    margin-bottom: 5px !important;
-    font-weight: bold !important;
-}
-/* 1. Estilo de letra para los novios */
-   /* 1. Estilo de letra para los novios (Inicio y Final) */
-    .nombres, .nombres-final, .nombres-cierre {
-        font-family: 'Dancing Script', cursive !important; 
-        font-size: 2rem !important; 
-        line-height: 1.2 !important;
-        margin-bottom: 15px !important;
-        color: #555 !important; 
-        text-align: center !important;
-    }
-/* ==============================
-   TARJETAS DE PADRES Y PADRINOS
-   ============================== */
+    .container { 
+        width:100% !important; 
+        max-width:100% !important; 
+        padding:0 !important; 
+    } 
 
-/* Fondo y sombra para cada tarjeta blanca */
-.tarjeta-blanca-boda {
-    background: #ffffff !important;
-    border-radius: 10px !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
-    margin: 20px auto !important;
-    padding: 25px !important;
-    width: 90% !important;
-    max-width: 480px !important;
-    text-align: center !important;
-}
+    .contenedor-cards, 
+    .contenedor-tarjetas { 
+        flex-direction:column !important; 
+        align-items:center !important; 
+        gap:20px !important; 
+        padding:15px 0 !important; 
+    } 
 
-/* Títulos principales: "Nuestros Padres" y "Padrinos" */
-.titulo-seccion-boda {
-    font-family: 'Dancing Script', cursive !important;
-    font-size: 2.2rem !important;
-    color: #666 !important;
-    margin-bottom: 25px !important;
-}
+    .card, 
+    .tarjeta-evento, 
+    .card-final, 
+    .card-pases { 
+        width:88% !important; 
+        max-width:500px !important; 
+        margin:auto !important; 
+        box-sizing:border-box !important; 
+        text-align:center !important;
+    } 
 
-/* Categorías: "NOVIA" y "NOVIO" (solo para Padres) */
-.rol-boda {
-    text-transform: uppercase !important;
-    color: #777 !important;
-    font-size: 1.1rem !important;
-    font-weight: bold !important;
-    margin-top: 15px !important;
-    letter-spacing: 0.5px !important;
-}
+    /* TEXTO GENERAL */
+    .fecha { 
+        font-size:1.1rem !important; 
+        margin-bottom:20px !important; 
+    } 
 
-/* Nombres de las personas: "Noé Bardales", "Eloy García", etc. */
-.nombres-personas-boda {
-    color: #666 !important;
-    font-size: 1.3rem !important;
-    margin: 5px 0 !important;
-    line-height: 1.4 !important;
-}
+    .frase-boda { 
+        font-size:1.8rem !important; 
+    } 
 
-/* Detalle especial para el (+) de los padres */
-.nombre-padre .con-cruz {
-    font-size: 1rem !important;
-    color: #888 !important;
-    margin-left: 2px !important;
-}
-   /* ==============================
-   AJUSTE EXACTO PADRES Y PADRINOS (MÓVIL)
-   ============================== */
+    .titulo-tarjeta { 
+        font-size:2rem !important; 
+    } 
 
-/* Tarjeta general más tipo "card elegante" */
-.card {
-    background: #ffffff !important;
-    border-radius: 12px !important;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08) !important;
-    padding: 25px 20px !important;
-    width: 90% !important;
-    max-width: 420px !important;
-}
+    .titulo-card { 
+        font-size:2rem !important; 
+        margin-bottom:12px !important;
+        color:#666 !important;
+    } 
 
-/* Títulos "Nuestros Padres" / "Padrinos" */
-.titulo-card {
-    font-size: 2rem !important;
-    margin-bottom: 20px !important;
-    color: #666 !important;
-}
+    /* IMÁGENES */
+    .foto-boda { 
+        width:75% !important; 
+        max-width:260px !important; 
+        height:auto !important; 
+        border:6px solid white !important; 
+        box-shadow:0 5px 15px rgba(0,0,0,.15) !important; 
+        margin:10px auto 25px auto !important; 
+    } 
 
-/* Contenedor NOVIA / NOVIO en columna (clave del diseño) */
-.info-padres {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 18px !important;
-}
+    .contenedor-dos-fotos { 
+        flex-direction:column !important; 
+        width:100% !important; 
+        gap:15px !important; 
+        padding:0 !important; 
+    } 
 
-/* Cada bloque NOVIA / NOVIO */
-.columna {
-    text-align: center !important;
-}
+    .foto-boda-doble { 
+        width:75% !important; 
+        max-width:240px !important; 
+    } 
 
-/* NOVIA / NOVIO estilo */
-.rol {
-    font-size: 1rem !important;
-    font-weight: bold !important;
-    color: #777 !important;
-    margin-bottom: 8px !important;
-    letter-spacing: 1px !important;
-}
+    /* CONTADOR */
+    .contador-container { 
+        gap:5px !important; 
+    } 
 
-/* Nombres de padres */
-.columna p {
-    margin: 3px 0 !important;
-    font-size: 1.15rem !important;
-    color: #555 !important;
-}
+    .bloque { 
+        width:65px !important; 
+    } 
 
-/* Separación entre tarjetas (Padres y Padrinos) */
-.contenedor-cards {
-    gap: 15px !important;
-}
+    .numero { 
+        font-size:1.5rem !important; 
+        padding:12px 4px !important; 
+    } 
+
+    /* BOTONES */
+    .boton-llegar, 
+    .boton-confirmar, 
+    .boton-pdf { 
+        max-width:90% !important; 
+    } 
+
+    /* NOVIOS */
+    .nombres, 
+    .nombres-final, 
+    .nombres-cierre { 
+        font-family:'Dancing Script', cursive !important; 
+        font-size:2rem !important; 
+        line-height:1.2 !important; 
+        margin-bottom:15px !important; 
+        color:#555 !important; 
+        text-align:center !important; 
+    } 
+
+    /* PADRES Y PADRINOS (FIX FINAL LIMPIO) */
+    .info-padres { 
+        display:flex !important; 
+        flex-direction:column !important; 
+        align-items:center !important; 
+        justify-content:center !important; 
+        gap:12px !important; 
+    } 
+
+    .columna { 
+        width:100% !important; 
+        text-align:center !important; 
+    } 
+
+    .rol { 
+        font-size:0.95rem !important; 
+        font-weight:bold !important; 
+        color:#777 !important; 
+        margin:10px 0 5px 0 !important; 
+    } 
+
+    .columna p { 
+        font-size:1rem !important; /* mismo tamaño que padrinos */
+        margin:2px 0 !important; 
+        color:#555 !important; 
+    } 
+
+    .contenedor-cards { 
+        gap:15px !important; 
+    } 
 }
 
 
